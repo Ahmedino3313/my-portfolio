@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Custom Scrollbar  */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #080812;
+}
+::-webkit-scrollbar-thumb {
+    background: #00FFB2;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00C9FF;
+}
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080812;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Selection color */
+::selection {
+    background: #00FFB240;
+    color: #00FFB2;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none !important;
+    }
+    .mobile-menu-btn {
+        display: flex !important;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+    .hero-avatar {
+        display: flex !important;
+        justify-content: center !important;
+        width: 220px !important;
+        height: 220px !important;
+        margin-bottom: 20px !important;
+    }
+    .hero-avatar > div:first-child {
+        width: 220px !important;
+        height: 220px !important;
+    }
+    .hero-avatar img {
+        width: 220px !important;
+        height: 220px !important;
+    }
+
+    /* Hide floating badges on mobile */
+    .hero-avatar .badge {
+        display: none !important;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
