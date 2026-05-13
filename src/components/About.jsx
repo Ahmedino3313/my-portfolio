@@ -32,7 +32,7 @@ function About() {
             id="about"
             style={{
                 padding: "120px clamp(1.5rem, 5vw, 4rem)",
-                background: "rgba(0,255,178,0.015)",
+                background: "rgba(0, 255, 178, 0.015)",
             }}
         >
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>

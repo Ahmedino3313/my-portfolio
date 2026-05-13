@@ -69,7 +69,7 @@ function ParticleField() {
                     fill="#00ffb2"
                     animate={{
                         opacity: [0.05, 0.4, 0.05],
-                        cy: [d.y, d.y - 5, d.y],
+                        cy: [`${d.y}`, `${d.y - 5}`, `${d.y}`],
                     }}
                     transition={{
                         duration: d.duration,
@@ -360,7 +360,7 @@ function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.8 }}
-                            style={{ display: "flex", gap: 14 }}
+                            style={{ display: "flex", gap: 14, }}
                         >
                             {[
                                 { icon: FiGithub,   href: "https://github.com/Ahmedino3313", label: "GitHub"   },
@@ -374,6 +374,7 @@ function Hero() {
                                 whileHover={{ scale: 1.12, y: -3 }}
                                 whileTap={{ scale: 0.95 }}
                                 title={s.label}
+                                target="_blank"
                                 style={{
                                     width: 44,
                                     height: 44,
