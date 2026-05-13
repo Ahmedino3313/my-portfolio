@@ -200,6 +200,7 @@ function Hero() {
 
                         {/* Name */}
                         <motion.h1
+                            className="hero-name"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.7 }}
@@ -254,6 +255,7 @@ function Hero() {
 
                         {/* Bio */}
                         <motion.p
+                            className="hero-bio"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5 }}
@@ -405,32 +407,36 @@ function Hero() {
                         style={{ position: "relative", width: 320 }}
                     >
                         {/* Rotating rings */}
-                        <motion.div
-                            animate={{ rotate: 360 }}
-                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                            style={{
-                                position: "absolute",
-                                inset: -16,
-                                borderRadius: "50%",
-                                border: "1px dashed rgba(0,255,178,0.3)",
-                            }}
-                        />
-                        <motion.div
-                            animate={{ rotate: -360 }}
-                            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                            style={{
-                                position: "absolute",
-                                inset: -32,
-                                borderRadius: "50%",
-                                border: "1px dashed rgba(0,201,255,0.15)",
-                            }}
-                        />
+                        <div className="hero-rings">
+                            <motion.div
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                                style={{
+                                    position: "absolute",
+                                    inset: -16,
+                                    borderRadius: "50%",
+                                    border: "1px dashed rgba(0,255,178,0.3)",
+                                }}
+                            />
+                            <motion.div
+                                animate={{ rotate: -360 }}
+                                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                                style={{
+                                    position: "absolute",
+                                    inset: -32,
+                                    borderRadius: "50%",
+                                    border: "1px dashed rgba(0,201,255,0.15)",
+                                }}
+                            />
+                        </div>
 
                         {/* Photo circle */}
                         <div
                             style={{
                                 width: 320,
                                 height: 320,
+                                minWidth: 320,
+                                minHeight: 320,
                                 borderRadius: "50%",
                                 border: "3px solid rgba(0,255,178,0.3)",
                                 overflow: "hidden",

@@ -20,6 +20,7 @@ function Footer() {
 
                 {/* Top row */}
                 <div
+                    className="footer-grid"
                     style={{
                         display: "grid",
                         gridTemplateColumns: "1.5fr 1fr 1fr",
@@ -225,6 +226,7 @@ function Footer() {
 
                 {/* Bottom row */}
                     <div
+                    className="footer-bottom"
                     style={{
                         display: "flex",
                         justifyContent: "space-between",

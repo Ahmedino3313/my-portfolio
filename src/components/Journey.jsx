@@ -156,7 +156,7 @@ function Journey() {
                                         cursor: "default",
                                     }}
                                 >
-                                    <Icon size={30} style={{ color: iconColor }} />
+                                    <Icon size={20} style={{ color: iconColor }} />
                                 </motion.div>
 
                                 {/* Content card */}

@@ -43,43 +43,97 @@ body {
 
 /* Media Query */
 @media (max-width: 768px) {
+
+    /* Navbar */
     .desktop-nav {
         display: none !important;
     }
     .mobile-menu-btn {
         display: flex !important;
     }
+
+    /* Hero */
     .hero-grid {
-        grid-template-columns: 1fr !important;
-        display: flex !important;
-        flex-direction: column-reverse !important;
-        align-items: center !important;
-    }
-    .hero-avatar {
-        display: flex !important;
-        justify-content: center !important;
-        width: 220px !important;
-        height: 220px !important;
-        margin-bottom: 20px !important;
-    }
-    .hero-avatar > div:first-child {
-        width: 220px !important;
-        height: 220px !important;
-    }
-    .hero-avatar img {
-        width: 220px !important;
-        height: 220px !important;
+    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 24px !important;
     }
 
-    /* Hide floating badges on mobile */
-    .hero-avatar .badge {
+    /* Shrink the whole avatar container */
+    .hero-avatar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 180px !important;
+    height: 180px !important;
+    margin-bottom: 0 !important;
+    overflow: visible !important;
+    }
+
+    /* Shrink the photo circle */
+    .hero-avatar > div:first-child {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    min-height: 180px !important;
+    border-radius: 50% !important;
+    }
+
+    /* Shrink the actual image */
+    .hero-avatar img {
+    width: 180px !important;
+    height: 180px !important;
+    border-radius: 50% !important;
+    }
+
+    /* Hide rotating rings on mobile */
+    .hero-avatar motion\.div,
+    .hero-avatar > *:not(div:last-child) {
+    display: none !important;
+    }
+
+    /* Hide badges */
+    .badge {
+    display: none !important;
+    }
+
+    .hero-rings {
         display: none !important;
     }
 
+    /* Shrink name font on mobile */
+    .hero-name {
+    font-size: 2.4rem !important;
+    }
+
+    /* Fix bio text justify on mobile */
+    .hero-bio {
+    text-align: left !important;
+    }
+    
+
+    /* About */
     .about-grid {
         grid-template-columns: 1fr !important;
+        gap: 40px !important;
     }
+
+    /* Contact */
     .contact-grid {
         grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 36px !important;
+    }
+    .footer-bottom {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 8px !important;
     }
 }

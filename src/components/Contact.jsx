@@ -130,6 +130,7 @@ function Contact() {
 
                 {/* Grid */}
                 <div
+                    className="contact-grid"
                     style={{
                         display: "grid",
                         gridTemplateColumns: "1fr 1.4fr",
