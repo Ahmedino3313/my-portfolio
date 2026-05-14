@@ -44,7 +44,7 @@ body {
 /* Media Query */
 @media (max-width: 768px) {
 
-    /* Navbar */
+    /* ── Navbar ── */
     .desktop-nav {
         display: none !important;
     }
@@ -52,67 +52,55 @@ body {
         display: flex !important;
     }
 
-    /* Hero */
+    /* ── Hero ── */
     .hero-grid {
-    grid-template-columns: 1fr !important;
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    align-items: center !important;
-    gap: 24px !important;
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        gap: 24px !important;
     }
 
-    /* Shrink the whole avatar container */
     .hero-avatar {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 180px !important;
-    height: 180px !important;
-    margin-bottom: 0 !important;
-    overflow: visible !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 180px !important;
+        height: 180px !important;
+        margin-bottom: 0 !important;
+        position: relative !important;
     }
 
-    /* Shrink the photo circle */
-    .hero-avatar > div:first-child {
-    width: 180px !important;
-    height: 180px !important;
-    min-width: 180px !important;
-    min-height: 180px !important;
-    border-radius: 50% !important;
+    .hero-avatar > div {
+        width: 180px !important;
+        height: 180px !important;
+        min-width: 180px !important;
+        min-height: 180px !important;
+        border-radius: 50% !important;
     }
 
-    /* Shrink the actual image */
     .hero-avatar img {
-    width: 180px !important;
-    height: 180px !important;
-    border-radius: 50% !important;
-    }
-
-    /* Hide rotating rings on mobile */
-    .hero-avatar motion\.div,
-    .hero-avatar > *:not(div:last-child) {
-    display: none !important;
-    }
-
-    /* Hide badges */
-    .badge {
-    display: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
     }
 
     .hero-rings {
         display: none !important;
     }
 
-    /* Shrink name font on mobile */
-    .hero-name {
-    font-size: 2.4rem !important;
+    .badge {
+        display: none !important;
     }
 
-    /* Fix bio text justify on mobile */
-    .hero-bio {
-    text-align: left !important;
+    .hero-name {
+        font-size: 2.4rem !important;
     }
-    
+
+    .hero-bio {
+        text-align: left !important;
+    }
 
     /* About */
     .about-grid {

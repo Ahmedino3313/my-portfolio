@@ -443,11 +443,12 @@ function Hero() {
                                 position: "relative",
                                 background: "linear-gradient(135deg, rgba(0,255,178,0.1), rgba(0,201,255,0.05))",
                                 boxShadow: "0 0 60px rgba(0,255,178,0.15)",
+                                animation: "pulseGlow 4s ease-in-out infinite"
                             }}
                         >
                             <img
                                 src={profileImg}
-                                alt="Ahmed Tajudeen"
+                                alt="Ahmed"
                                 style={{
                                     width: "100%",
                                     height: "100%",
