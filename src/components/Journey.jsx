@@ -3,7 +3,7 @@ import { TIMELINE } from "../data/index";
 import { FiCode, FiHome, FiTarget, FiZap, FiStar } from "react-icons/fi";
 import { SiReact } from "react-icons/si";
 import { GiPlantSeed } from "react-icons/gi";
-import { FaRocket } from "react-icons/fa";
+import { FaRocket, FaUniversity } from "react-icons/fa";
 
 const ICONS = {
     seed:   GiPlantSeed,
@@ -14,6 +14,7 @@ const ICONS = {
     rocket: FaRocket,
     target: FiTarget,
     code:   FiCode,
+    bank:   FaUniversity,
 };
 
 const ICON_COLORS = {
@@ -25,6 +26,7 @@ const ICON_COLORS = {
     rocket: "#f97316",
     target: "#00ffb2",
     code:   "#00c9ff",
+    bank:   "#2563eb",
 };
 
 function Journey() {

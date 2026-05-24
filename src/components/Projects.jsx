@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiExternalLink, FiGithub, FiX } from "react-icons/fi";
 import { PROJECTS } from "../data/index";
 
-const CATEGORIES = ["All", "React Apps", "Landing Pages", "UI Designs", "Web Applications", "E-Commerce"];
+const CATEGORIES = ["All", "React Apps", "Landing Pages", "UI Designs", "Web Applications", "E-Commerce", "Fintech Apps"];
 
 const GRADIENTS = {
     "from-rose-900 to-pink-800":     "linear-gradient(135deg, #ff2e63, #ff66b2)",
@@ -20,6 +20,7 @@ const GRADIENTS = {
     "from-neutral-900 to-slate-800": "linear-gradient(135deg, #ff1744, #ff9100)",
     "from-green-900 to-emerald-800": "linear-gradient(135deg, #00ff6a, #00e676)",
     "from-red-900 to-orange-800":    "linear-gradient(135deg, #ff1744, #ff5722)",
+    "from-sky-900 to-indigo-800":    "linear-gradient(135deg, #6a00ff, #00d4ff)",
 };
 
 function ProjectCard({ proj, delay, onOpen}) {

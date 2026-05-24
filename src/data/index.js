@@ -16,6 +16,16 @@ export const SKILLS = [
 export const PROJECTS = [
     {
         id: 1,
+        title: "TRUVA Fintech App",
+        desc: "Modern digital banking platform built with React and Node.js featuring instant account creation, virtual wallets, real-time transactions, savings goals, and a premium fintech dashboard UI with secure authentication and JWT-based backend.",
+        tech: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "bcrypt"],
+        category: "Fintech Apps",
+        gradient: "from-sky-900 to-indigo-800",
+        live: "https://truva-fintech-app.vercel.app",
+        github: "https://github.com/Ahmedino3313/truva-frontend"
+    },
+    {
+        id: 2,
         title: "NovaGlow E-Commerce",
         desc: "Luxury skincare e-commerce platform built with React featuring Naira pricing, category filters, cart functionality, and a premium glassmorphism UI.",
         tech: ["React", "CSS Modules", "Framer Motion"],
@@ -25,7 +35,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/NovaGlow",
     },
     {
-        id: 2,
+        id: 3,
         title: "HomePoint Properties",
         desc: "Modern real estate web app for browsing, filtering, and listing properties in Nigeria. Features property search, detailed listing pages, and a clean professional UI.",
         tech: ["React", "Tailwind", "React Icons"],
@@ -35,7 +45,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/HomePoint",
     },
         {
-        id: 3,
+        id: 4,
         title: "Recipe Finder",
         desc: "A modern recipe discovery website featuring delicious meals, cooking instructions, category filtering, and a fully responsive user interface.",
         tech: ["HTML", "CSS", "JavaScript"],
@@ -45,7 +55,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Recipe-Finder",
     },
     {
-        id: 4,
+        id: 5,
         title: "Weather App",
         desc: "Real-time weather app consuming OpenWeather API with dynamic backgrounds, 5-day forecasts, and location detection.",
         tech: ["React", "API Integration", "CSS3"],
@@ -55,7 +65,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Wheather-app",
     },
     {
-        id: 5,
+        id: 6,
         title: "Quiz Master App",
         desc: "Interactive quiz app with Open Trivia DB API, live timer, score tracking, and smooth result animations.",
         tech: ["React", "Open Trivia DB", "useState"],
@@ -65,7 +75,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Quiz-App-using-React",
     },
     {
-        id: 6,
+        id: 7,
         title: "FCMB Banking Clone",
         desc: "Pixel-perfect replication of FCMB Online Business Banking UI using only HTML and CSS — no frameworks.",
         tech: ["HTML5", "CSS3"],
@@ -75,7 +85,7 @@ export const PROJECTS = [
         github: "#",
     },
     {
-        id: 7,
+        id: 8,
         title: "JavaScript Calculator",
         desc: "Fully functional calculator with keyboard support, expression parsing, and smooth button micro-interactions.",
         tech: ["JavaScript", "HTML5", "CSS3"],
@@ -85,7 +95,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/caculator",
     },
     {
-        id: 8,
+        id: 9,
         title: "Developer Portfolio",
         desc: "This portfolio — fully responsive, animated dark-mode portfolio built in React with Framer Motion.",
         tech: ["React", "Framer Motion", "Tailwind"],
@@ -95,7 +105,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Portfolio",
     },
     {
-        id: 9,
+        id: 10,
         title: "CloudNine Chat Web App",
         desc: "Modern real-time chat application with user authentication, responsive messaging interface, online status indicators, and smooth animations.",
         tech: ["React", "Firebase", "Tailwind"],
@@ -105,7 +115,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/chat-Application",
     },
     {
-        id: 10,
+        id: 11,
         title: "Login Page",
         desc: "Clean and secure authentication interface featuring login, signup, password visibility toggle, and responsive modern UI design.",
         tech: ["React", "CSS3", "JavaScript"],
@@ -115,7 +125,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Login-Page",
     },
     {
-        id: 11,
+        id: 12,
         title: "Quote Generator",
         desc: "Motivational quote generator powered by API integration with category selection, random quote display, and elegant minimalist design.",
         tech: ["JavaScript", "API Integration", "CSS3"],
@@ -125,7 +135,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Quote-Generator",
     },
     {
-        id: 12,
+        id: 13,
         title: "Precision Stopwatch",
         desc: "Accurate stopwatch web app with lap tracking, start/pause/reset controls, and smooth animated time transitions.",
         tech: ["JavaScript", "HTML5", "CSS3"],
@@ -135,7 +145,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/Stopwatch",
     },
     {
-        id: 13,
+        id: 14,
         title: "Currency Converter",
         desc: "Currency exchange application with real-time conversion rates, multi-currency support, and responsive user-friendly interface.",
         tech: ["React", "Exchange Rate API", "Tailwind"],
@@ -145,7 +155,7 @@ export const PROJECTS = [
         github: "https://github.com/Ahmedino3313/currency-converter",
     },
     {
-        id: 14,
+        id: 15,
         title: "CloudNine Food Store",
         desc: "Modern food e-commerce platform featuring product listings, shopping cart, category filters, and a visually appealing responsive design.",
         tech: ["React", "Tailwind", "Framer Motion"],
@@ -163,6 +173,7 @@ export const TIMELINE = [
     { year: "2026", title: "NovaGlow Project",     icon: "star",    desc: "Built a full luxury e-commerce site with React, CSS Modules, Framer Motion, and Nigerian Naira pricing." },
     { year: "2026", title: "HomePoint Properties", icon: "home",    desc: "Built a real estate web app for Nigerian property listings with search, filters, and detailed property pages." },
     { year: "2026", title: "Advanced Stack",       icon: "rocket",  desc: "Expanded into Tailwind CSS, Supabase, Paystack integration, and modern animation patterns."  },
+    { year: "2026", title: "TRUVA Fintech App",    icon: "bank",    desc: "Built a full digital banking platform with React, Node.js, Express, PostgreSQL, JWT authentication, bcrypt security, virtual wallets, and real-time transactions." },
     { year: "Now",  title: "Building & Growing",   icon: "target",  desc: "Actively taking on projects, contributing to open source, and leveling up every single day." },
 ];
 
@@ -179,4 +190,5 @@ export const TESTIMONIALS = [
     { name: "Chisom Adaeze", role: "Startup Founder",  stars: 5, text: "Ahmed built an exceptional real estate website that perfectly captured our brand and vision. The design is modern, fast, and incredibly user-friendly. Communication was smooth throughout the entire project, and the final result exceeded our expectations." },
     { name: "Marcus L.",     role: "Product Manager",  stars: 5, text: "Ahmed transformed our idea into a polished and professional React application that truly stands out. The attention to detail, smooth performance, and modern UI exceeded our expectations. He communicated clearly, delivered on time, and made the entire development process stress-free. We’ve received fantastic feedback from users since launch." },
     { name: "Fatima Bello",  role: "E-Commerce Owner", stars: 5, text: "The eCommerce store Ahmed designed for my business was absolutely outstanding. Everything from the layout to the user experience felt premium and professionally crafted. The website runs smoothly on both desktop and mobile, loads fast, and gives customers a seamless shopping experience. I’m beyond satisfied with the final result and would gladly work with him again on future projects." },
+    { name: "Daniel K.",     role: "Fintech Founder",  stars: 5, text: "TRUVA is an impressive fintech platform that feels like a real banking product. The UI is clean, modern, and extremely intuitive. Features like instant account creation, virtual wallets, and real-time transactions are implemented flawlessly. The security with JWT authentication and bcrypt hashing gives strong confidence in the system. This project easily stands out as production-level work." },
 ];
