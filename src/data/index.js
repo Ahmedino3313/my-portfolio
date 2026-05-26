@@ -21,7 +21,7 @@ export const PROJECTS = [
         tech: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "bcrypt"],
         category: "Fintech Apps",
         gradient: "from-sky-900 to-indigo-800",
-        live: "https://truva-fintech-app.vercel.app",
+        live: "https://truva-fintech.vercel.app",
         github: "https://github.com/Ahmedino3313/truva-frontend"
     },
     {
